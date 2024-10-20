@@ -17,7 +17,6 @@ public class AccountServiceApplication {
     public static void main(String[] args) {
         SpringApplication.run(AccountServiceApplication.class, args);
     }
-
     @Bean
     CommandLineRunner commandLineRunner(BankAccountRepo bankAccountRepo){
         return args -> {
