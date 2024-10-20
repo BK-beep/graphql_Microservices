@@ -21,6 +21,7 @@ public class AccountServiceApplication {
     @Bean
     CommandLineRunner commandLineRunner(BankAccountRepo bankAccountRepo){
         return args -> {
+
             for (int i = 0; i < 10; i++) {
                 BankAccount bankAccount = BankAccount.builder()
                         .id(UUID.randomUUID().toString())
